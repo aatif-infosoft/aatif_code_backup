@@ -1,0 +1,12 @@
+export ALERTS_BASE=$(pwd)
+export VINR_CONFIG_FILE=$ALERTS_BASE/src/main/resources/databaseSetting.ini
+export SmsProvider_CONFIG_FILE=$ALERTS_BASE/src/main/resources/smsProviderClassNames.ini
+export DefaultSmsProvider_CONFIG_FILE=$ALERTS_BASE/src/main/resources/defaultProvider.ini
+export LOG_PROPERTIES_FILE=$ALERTS_BASE/src/main/resources/log4j.properties 
+echo "VINR_CONFIG_FILE = " $VINR_CONFIG_FILE
+echo "SmsProvider_CONFIG_FILE = " $SmsProvider_CONFIG_FILE
+echo "DefaultSmsProvider_CONFIG_FILE = " $DefaultSmsProvider_CONFIG_FILE
+echo "LOG_PROPERTIES_FILE = " $LOG_PROPERTIES_FILE
+CLASSPATH="."
+export CLASSPATH
+echo $CLASSPATH 
